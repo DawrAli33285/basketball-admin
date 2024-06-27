@@ -231,7 +231,7 @@ window.location.reload(true)
             }
         }
 
-        const featuredPlayerNames = articleItem?.featuredPlayers.map(playerId => {
+        const featuredPlayerNames = allArticles?.featuredPlayers.map(playerId => {
             const player = players.find(u => u?._id === playerId);
             return player ? player.name : '';
         }).filter(name => name); // Filter out any empty names
@@ -297,7 +297,7 @@ window.location.reload(true)
             <div className='videos flex flex-wrap gap-[20px]'>
                 {allArticles?.map((articleItem) => (
 
-                    <div key={articleItem.id} className="video-card relative w-full  overflow-hidden">
+                    <div key={articleItem?._id} className="video-card relative w-full  overflow-hidden">
                         <div className="relative w-full">
                             <img id={`image-${articleItem?._id}`} src={articleItem?.banner} alt="article" />
                         </div>

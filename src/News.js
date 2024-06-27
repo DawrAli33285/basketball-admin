@@ -231,10 +231,10 @@ window.location.reload(true)
             }
         }
 
-        const featuredPlayerNames = allArticles?.featuredPlayers.map(playerId => {
-            const player = players.find(u => u?._id === playerId);
-            return player ? player.name : '';
-        }).filter(name => name); // Filter out any empty names
+        // const featuredPlayerNames = allArticles?.featuredPlayers.map(playerId => {
+        //     const player = players.find(u => u?._id === playerId);
+        //     return player ? player.name : '';
+        // }).filter(name => name); // Filter out any empty names
     };
 
     return (

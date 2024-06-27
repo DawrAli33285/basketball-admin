@@ -75,7 +75,8 @@ console.log(response.data)
                     </div>
                     <div className="flex flex-col gap-[10px]">
                         <p className="text-[14px]">Subscription</p>
-                        <h2 className="text-[22px] font-bold">10,549</h2>
+                        <h2 className="text-[22px] font-bold">{state?.subscribers
+                        }</h2>
                     </div>
                 </div>
                 {/* <div className="user-statics bg-[#fa5a7d1a]">

@@ -12,7 +12,7 @@ export default function Header({ children }) {
     }
     return (
         <div className="w-full flex relative">
-            <div className={`${ShowNav ? "mobile-nav" : ""} nav lg:hidden bg-white py-[40px] px-[20px] gap-[40px]`}>
+            <div className={`${ShowNav ? "mobile-nav" : ""} nav lg:hidden z-[9999] h-[100vh] bg-white py-[40px] px-[20px] gap-[40px]`}>
                 <span className="w-full flex justify-end mobile-inner">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

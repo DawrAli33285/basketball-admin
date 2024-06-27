@@ -42,14 +42,14 @@ function App() {
   return (
     <div className="px-[40px]">
        <ToastContainer />
-      <div className="max-w-[1440px] mx-auto my-[60px] grid grid-cols-2 bg-[#FAFAFB]">
+      <div className="max-w-[1440px] mx-auto my-[60px] grid grid-cols-1 lg:grid-cols-2 bg-[#FAFAFB]">
         <div className="w-full relative">
           <img src={bg} alt="bg" className="w-full bg-cover" />
           <span className="w-[120px] absolute top-[20px] left-[20px]">
             <img src={logo} alt="logo" className="w-full" />
           </span>
         </div>
-        <div className="w-full flex">
+        <div className="w-full lg:m-0 mt-[20px] flex">
           <div className="m-auto">
             <h2 className="text-[26px] text-[#F33] font-bold">Welcome Back</h2>
             <h3 className="text-[16px]">Enter your email and password to sign in</h3>
